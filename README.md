@@ -127,3 +127,25 @@ Store 지점 별 실업률의 차이가 굉장히 크며, 그에 따라 매출�
 2. 위의 경우 보다는 약한 정비례 관계 : Weekly_Sales ~ Promotion 1 간의 관계, Weekly_Sales ~ Promotion 4 간의 관계, IsHoliday ~ Promotion 2 간의 관계, IsHoliday ~ Promotion 3 간의 관계
 
 ### 4-6. 강한 정비례 관계 확인하기.
+
+1. Promotion1 ~ Promotion4 간의 관계
+
+groupby를 이용해서 연도 별 지점 별 Promotion1, Promotion4 최빈도를 구했습니다. 2010년에는 Promotion1 NaN 값이 많아서 그래프를 그릴 수 없었습니다. 그래서 subplots 도화지 간격을 다르게 하기 위해서 gridspec을 이용하였습니다. 연도 별로 지점 별 Promotion1, Promotion4 간의 관계를 그려보니, 대체로 정비례 관계와 비슷한 경향을 보여주었습니다.
+
+![Promotion1 ~ Promotion4 간의 관계](./images/Promotion1%20~%20Promotion4.png)
+
+2. Year ~ Fuel_Price 간의 관계
+
+연도 별 Fuel Price를 알기 위해서 평균, 중앙값, 그리고 최빈값을 구해주었습니다. 그리고 연도 별 Fuel Price와의 평균, 중앙값, 최빈값의 그래프를 그려보니, 3개의 그래프 모두 정비례 관계와 비슷한 경향을 보여주었습니다.
+
+![Year ~ Fuel_Price 간의 관계](./images/Year%20~%20Fuel%20Price.png)
+
+### 4-7. 위의 경우보다 약한 정비례 관계 확인하기.
+
+1. Weekly_Sales ~ Promotion1, Promotion5 간의 관계
+
+x축을 Weekly_Sales로, y축을 Promotion1/ Promotion5 로 설정하고 사이즈와 색깔은 Weekly_Sales를 기준으로 만들어주었습니다. 2개의 그래프 모두 위의 경우보다는 약하지만 정비례 관계와 비슷한 경향을 띄었습니다.
+
+![Weekly_Sales ~ Promotion1, Promotion5 간의 관계](./images/Weekly_Sales%20~%20Promotion1%2C%20Promotion5.png)
+
+2. IsHoliday ~ Promotion2, Promotion3 간의 관계
