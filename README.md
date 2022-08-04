@@ -149,3 +149,9 @@ x축을 Weekly_Sales로, y축을 Promotion1/ Promotion5 로 설정하고 사이�
 ![Weekly_Sales ~ Promotion1, Promotion5 간의 관계](./images/Weekly_Sales%20~%20Promotion1%2C%20Promotion5.png)
 
 2. IsHoliday ~ Promotion2, Promotion3 간의 관계
+
+원하는 색상으로 팔레트를 지정해주고 싶어서, 팔레트를 직접 만들었습니다. 그런 다음 Promotion2, Promotion3의 평균과 중앙값을 각각 구해주었습니다. 그리고 JointGrid를 이용해서 hist와 scatter를 한번에 보여주었습니다. 대략적인 분포를 더욱 편하게 보기 위해서 이상점을 제외하고 x축과 y축 범위를 지정해주었습니다. 그리고 axvline, axhline을 이용해서 Promotion2, Promotion3의 평균과 중앙값을 찍어주었습니다. scatter를 보면, 위의 경우보다 약하지만 정비례 관계를 확인할 수 있습니다.
+
+## 결론
+
+여러 요인끼리 묶어서 데이터의 분포를 알아보았습니다. Promotion1 값을 어떻게 채워야 할지 몰라서 못 한점이 많이 아쉽습니다. 제 자료를 봐주셔서 감사합니다.
